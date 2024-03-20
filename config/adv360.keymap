@@ -38,18 +38,18 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp GRAVE                                                                           &kp BACKSLASH      &kp N6  &kp N7               &kp N8     &kp N9              &kp N0    &kp MINUS
-&hm LEFT_ALT TAB         &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LEFT_BRACKET                                                                    &kp RIGHT_BRACKET  &kp Y   &kp U                &kp I      &kp O               &kp P     &kp BACKSPACE
-&hm LEFT_CONTROL ESCAPE  &kp A      &kp S     &lt 1 D   &kp F      &kp G   &kp LEFT_BRACE    &kp GRAVE     &kp TILDE             &kp BACKSLASH      &kp PIPE   &kp RIGHT_BRACE    &kp H   &hm LS(LG(SPACE)) J  &lt 1 K    &hm LC(LEFT_ALT) L  &kp SEMI  &kp SQT
-&kp LSHFT                &kp Z      &kp X     &kp C     &kp V      &kp B                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                &kp N   &kp M                &kp COMMA  &kp DOT             &kp FSLH  &kp BACKSLASH
-&kp LEFT_ALT             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp LEFT_COMMAND  &lt 3 DELETE  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp ENTER  &kp SPACE                  &kp UP               &kp DOWN   &kp LBKT            &kp RBKT  &mo 2
+&kp EQUAL                &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp GRAVE                                                                           &kp BACKSLASH      &kp N6  &kp N7   &kp N8     &kp N9              &kp N0    &kp MINUS
+&hm LEFT_ALT TAB         &kp Q      &kp W     &kp E     &kp R      &kp T   &kp LEFT_BRACKET                                                                    &kp RIGHT_BRACKET  &kp Y   &kp U    &kp I      &kp O               &kp P     &kp BACKSPACE
+&hm LEFT_CONTROL ESCAPE  &kp A      &kp S     &lt 1 D   &lt 3 F    &kp G   &kp LEFT_BRACE    &kp GRAVE     &kp TILDE             &kp BACKSLASH      &kp PIPE   &kp RIGHT_BRACE    &kp H   &lt 3 J  &lt 1 K    &hm LC(LEFT_ALT) L  &kp SEMI  &kp SQT
+&kp LSHFT                &kp Z      &kp X     &kp C     &kp V      &kp B                                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                &kp N   &kp M    &kp COMMA  &kp DOT             &kp FSLH  &kp BACKSLASH
+&mo 1                    &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp ENTER  &kp SPACE                  &kp UP   &kp DOWN   &kp LBKT            &kp RBKT  &mo 2
             >;
         };
 
         fn {
             bindings = <
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F11                                                                  &kp F12          &kp F6          &kp F7            &kp F8             &kp F9           &kp F10          &kp BACKSLASH
-&trans     &trans  &trans  &trans  &trans  &trans  &none                                                                    &none            &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp BACKSLASH
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans  &none                                                                    &none            &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp BACKSLASH
 &trans     &trans  &trans  &trans  &trans  &trans  &none             &trans             &trans      &trans  &trans          &none            &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW  &trans           &trans
 &trans     &trans  &trans  &trans  &trans  &trans                                       &trans      &trans                                   &trans          &trans            &trans             &trans           &trans           &trans
 &trans     &trans  &trans  &trans  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE                  &trans            &trans             &trans           &trans           &trans
@@ -68,11 +68,11 @@
 
         homerow-num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &trans      &trans  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans     &trans         &trans    &trans  &trans                                      &trans  &trans            &trans             &trans          &trans           &trans  &trans
+&kp TILDE  &trans     &trans     &trans         &trans    &trans  &trans                                      &trans  &trans            &trans             &trans          &trans           &trans  &kp PIPE
+&trans     &kp GRAVE  &kp TILDE  &kp BACKSLASH  &kp PIPE  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
+&trans     &trans     &trans     &trans         &trans    &trans                  &trans      &trans                  &trans            &trans             &trans          &trans           &trans  &trans
+&trans     &trans     &trans     &trans         &trans            &trans  &trans  &trans      &trans  &trans  &trans                    &trans             &trans          &trans           &trans  &trans
             >;
         };
     };
